@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Email Checker</title><link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="wrap">
+  <div class="card">
+    <h1>Email Checker</h1>
+    <p class="sub">Check email syntax, domain and MX records.</p>
+    <div class="row">
+      <input id="email" type="email" placeholder="test@example.com" autocomplete="off">
+      <button id="check">CHECK</button>
+    </div>
+    <div id="result" class="result hidden"></div>
+    <div id="checks" class="checks hidden">
+      <div><span>Syntax</span><b id="syntax">—</b></div>
+      <div><span>Domain</span><b id="domain">—</b></div>
+      <div><span>MX Record</span><b id="mx">—</b></div>
+    </div>
+    <p class="note">Note: this version does not send an email. SMTP mailbox verification is intentionally not included.</p>
+  </div>
+</div>
+<script src="app.js"></script>
+</body></html>
